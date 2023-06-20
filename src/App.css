@@ -1,0 +1,175 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.App {
+  width:70%;
+  height:100%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  margin-bottom: 30px;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.form__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.form__item:last-child {
+  margin-left: 5px;
+}
+
+.form__label {
+  margin-bottom: 15px;
+  padding-left: 10px;
+  font-size: 13px;
+}
+
+.form__input {
+  width: 230px;
+  height: 30px;
+  font-size: 13px;
+  padding: 0 10px;
+  position: static;
+}
+
+.form__button {
+  align-self: center;
+  width: 130px;
+  height: 33px;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0 10px;
+  border: 0.5px solid black;
+  border-radius: 0;
+  
+}
+
+
+.optionsZones {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: 30px;
+  font-size: 13px;
+  padding: 0 10px;
+  top: 100px;
+}
+
+.ul {
+  display: flex;
+  width: 230px;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+
+.watchesList {
+  display: flex;
+  width: 700px;
+  height: 500px;
+  flex-direction: column;
+  top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+
+.clockContainer {
+  position: static;
+  width: 120px;
+  height: 120px;
+}
+
+
+.clock {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 24px;
+  border: 2px solid black;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.nameClock {
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+}
+
+.btn {
+  border-radius: 50%;
+  left: 110px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  position:relative;
+  text-align: center;
+  justify-content: center;
+  font-size: small;
+  cursor: pointer;
+}
+
+.hour_hand {
+  width: 5px;
+  height: 30px;
+  background: #222;
+  top: 20px;
+  left: 50px;
+  transform-origin: bottom;
+  position: absolute;
+  z-index: 2;
+}
+
+.hour_hand::after {
+  content: '';
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  background-color: black;
+}
+
+.min_hand {
+  position: absolute;
+  width: 4px;
+  height: 45px;
+  background-color: aqua;
+  top: 5px;
+  left: 50%;
+  transform-origin: bottom;
+  z-index: 5;
+}
+
+.sec_hand {
+  position: relative;
+  width: 2px;
+  height: 50px;
+  background: red;
+  left: 50%;
+  transform-origin: bottom;
+  z-index: 6;
+} 
